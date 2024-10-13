@@ -1,0 +1,230 @@
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to {
+        width: 10%;
+    }
+}
+.progres{
+    border-right: .15em solid red;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 6s steps(10,end),blink-caret .75s step-end infinite;
+}
+@keyframes blink-caret{
+    from,to{
+        border-color: transparent;
+    }
+    50%{
+        border-color: teal;
+    }
+}
+@media only screen and (max-width:700px){
+    #coloum{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+.p{
+    font-size:40px;
+    color:aliceblue ;
+}
+#container{
+    margin-top:70px ;
+    width: 100%;
+    height: 400px;
+}
+body{
+    margin: 0;
+    height: 1440px;
+}
+ul#nav{
+    width:100% ;
+    display: grid;
+    gap: 5px;
+    grid-auto-flow: column;
+    height: 7%;
+    z-index: 1000;
+    align-items: center;
+    position: fixed;
+}
+.home{
+    cursor: pointer;
+    font-family: "Sixtyfour Convergence";
+    text-transform: uppercase;
+    font-weight:bolder ;
+}
+#der{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D92F4;
+    flex-direction: column;
+}
+#poppin{
+    color: aliceblue;
+    font-family: Lato;
+    text-transform: capitalize;
+}
+#header{
+    display: flex;
+    font-family: "Sixtyfour Convergence";
+    color: white;
+    align-items: center;
+    /* justify-content: center; */
+    /* margin-top: 100px; */
+}
+#portofolio{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.message{
+    height: 100px;
+}
+#input{
+    width: 700px; 
+    outline: none;
+    border-style:hidden ;
+    border-bottom: 1px solid#0D92F4;
+    transition:border-bottom 0.5s ;
+}
+#input:focus{
+    border-style:none ;
+    border-bottom: 5px solid #0D92F4;
+
+}
+.d-flex{
+    justify-self: center;
+    align-items: center;
+    
+    grid-auto-flow: column;
+}
+#jud-por{
+    text-transform: capitalize;
+    font-family: Lato;
+    justify-self: center;
+}
+#btn{
+    background-color: aqua;
+    font-family:Lato;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 6px;
+    
+}
+/* #but{
+    width: 100%;
+} */
+#but:active{
+    color: aliceblue;
+    background-color: rgb(13, 110, 253);
+    
+}
+#btn:hover{
+    
+    transition: 0.5s ease-in-out;
+    background-color: rgb(4, 84, 90);
+    box-shadow: 0px 5px 1.5px 0px aquamarine, 0px 10px 1px 0px red;
+}
+#car-d{
+    color: aliceblue;
+    cursor:default;
+}
+#coloum{
+    display: flex;
+    flex-direction:row  ;
+    gap: 20px;
+}
+ul{
+    /* width: 700px; */
+    list-style: none;
+    /* gap: 5px; */
+}
+#garisu{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+}
+.garis{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    width: 150px;
+    height: 3px;
+}
+.garis1{
+
+    background-color: #0D92F4;
+    width: 150px;
+    height: 3px;
+}
+.p{
+    text-align: center;
+}
+.sub{
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 15px;
+    color: aliceblue;
+}
+li.sub-menu{
+    /* color: aliceblue; */
+    gap: 0 ;
+    /* float: right; */
+    /* display: flex; */
+    /* grid-auto-flow: row; */
+    /* justify-self: right; */
+
+}
+#none{
+    height: 100px;
+}
+#bag{
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+.bg-primary{
+    border: none;
+}
+.col-sm{
+    text-align: center;
+    
+    /* justify-items: center; */
+    height: 10%;
+    /* width: 10px; */
+}
+footer{
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #0D92F4;
+    height: 300px;
+    font-family: Lato;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 0px 10px 0 10px;
+    gap:20px;
+}
+.info-footer{
+    display: grid;
+    gap: 20px;
+    justify-self: right;
+    align-items:center;
+    grid-auto-flow: column;
+}
+#bag{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
